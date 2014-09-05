@@ -132,6 +132,7 @@ function cart_calendar_views_default_views() {
   $handler->display->display_options['tab_options']['type'] = 'normal';
   $handler->display->display_options['tab_options']['title'] = 'Calendar';
   $handler->display->display_options['tab_options']['weight'] = '0';
+  $handler->display->display_options['tab_options']['name'] = 'main-menu';
 
   /* Display: Week */
   $handler = $view->new_display('page', 'Week', 'page_2');
