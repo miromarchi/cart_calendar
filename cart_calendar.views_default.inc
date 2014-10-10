@@ -78,6 +78,17 @@ function cart_calendar_views_default_views() {
     2 => '#7a0e9c',
     4 => '#4c34fe',
   );
+  /* No results behavior: Global: Text area */
+  $handler->display->display_options['empty']['area']['id'] = 'area';
+  $handler->display->display_options['empty']['area']['table'] = 'views';
+  $handler->display->display_options['empty']['area']['field'] = 'area';
+  $handler->display->display_options['empty']['area']['label'] = 'no results';
+  $handler->display->display_options['empty']['area']['empty'] = TRUE;
+  $handler->display->display_options['empty']['area']['content'] = '<div class="alert alert-info alert-dismissible" role="alert">
+  <button type="button" class="close" data-dismiss="alert"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+  No results were returned by the query. Please <strong>reset the filter</strong> or try again with different filtering options.
+</div>';
+  $handler->display->display_options['empty']['area']['format'] = 'full_html';
   /* Relationship: Entity Reference: Referenced Entity */
   $handler->display->display_options['relationships']['field_cart_artist_target_id']['id'] = 'field_cart_artist_target_id';
   $handler->display->display_options['relationships']['field_cart_artist_target_id']['table'] = 'field_data_field_cart_artist';
