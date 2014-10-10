@@ -122,12 +122,11 @@ function cart_calendar_views_default_views() {
   $handler->display->display_options['fields']['field_cart_date']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['field_cart_date']['hide_alter_empty'] = FALSE;
   $handler->display->display_options['fields']['field_cart_date']['settings'] = array(
-    'format_type' => 'short',
+    'format_type' => 'date_format_cart_date_day',
     'fromto' => 'both',
     'multiple_number' => '',
     'multiple_from' => '',
     'multiple_to' => '',
-    'show_repeat_rule' => '',
   );
   $handler->display->display_options['fields']['field_cart_date']['group_rows'] = FALSE;
   $handler->display->display_options['fields']['field_cart_date']['delta_offset'] = '0';
@@ -216,12 +215,6 @@ function cart_calendar_views_default_views() {
     3 => 0,
     4 => 0,
   );
-  $handler->display->display_options['filters']['field_cart_location_value']['expose']['autocomplete_items'] = '10';
-  $handler->display->display_options['filters']['field_cart_location_value']['expose']['autocomplete_min_chars'] = '0';
-  $handler->display->display_options['filters']['field_cart_location_value']['expose']['autocomplete_field'] = 'field_cart_location';
-  $handler->display->display_options['filters']['field_cart_location_value']['expose']['autocomplete_raw_suggestion'] = 1;
-  $handler->display->display_options['filters']['field_cart_location_value']['expose']['autocomplete_raw_dropdown'] = 1;
-  $handler->display->display_options['filters']['field_cart_location_value']['expose']['autocomplete_dependent'] = 0;
   /* Filter criterion: Content: Title */
   $handler->display->display_options['filters']['title']['id'] = 'title';
   $handler->display->display_options['filters']['title']['table'] = 'node';
@@ -512,12 +505,11 @@ function cart_calendar_views_default_views() {
   $handler->display->display_options['fields']['field_cart_date']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['field_cart_date']['hide_alter_empty'] = FALSE;
   $handler->display->display_options['fields']['field_cart_date']['settings'] = array(
-    'format_type' => 'short',
+    'format_type' => 'date_format_cart_date_day',
     'fromto' => 'both',
     'multiple_number' => '',
     'multiple_from' => '',
     'multiple_to' => '',
-    'show_repeat_rule' => '',
   );
   $handler->display->display_options['fields']['field_cart_date']['group_rows'] = FALSE;
   $handler->display->display_options['fields']['field_cart_date']['delta_offset'] = '0';
@@ -846,12 +838,11 @@ function cart_calendar_views_default_views() {
   $handler->display->display_options['fields']['field_cart_date']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['field_cart_date']['hide_alter_empty'] = FALSE;
   $handler->display->display_options['fields']['field_cart_date']['settings'] = array(
-    'format_type' => 'short',
+    'format_type' => 'date_format_cart_date_day',
     'fromto' => 'both',
     'multiple_number' => '',
     'multiple_from' => '',
     'multiple_to' => '',
-    'show_repeat_rule' => '',
   );
   $handler->display->display_options['fields']['field_cart_date']['group_rows'] = FALSE;
   $handler->display->display_options['fields']['field_cart_date']['delta_offset'] = '0';
@@ -978,12 +969,6 @@ function cart_calendar_views_default_views() {
     3 => 0,
     4 => 0,
   );
-  $handler->display->display_options['filters']['field_cart_location_value']['expose']['autocomplete_items'] = '10';
-  $handler->display->display_options['filters']['field_cart_location_value']['expose']['autocomplete_min_chars'] = '0';
-  $handler->display->display_options['filters']['field_cart_location_value']['expose']['autocomplete_field'] = 'field_cart_location';
-  $handler->display->display_options['filters']['field_cart_location_value']['expose']['autocomplete_raw_suggestion'] = 1;
-  $handler->display->display_options['filters']['field_cart_location_value']['expose']['autocomplete_raw_dropdown'] = 1;
-  $handler->display->display_options['filters']['field_cart_location_value']['expose']['autocomplete_dependent'] = 0;
   /* Filter criterion: Content: Title */
   $handler->display->display_options['filters']['title']['id'] = 'title';
   $handler->display->display_options['filters']['title']['table'] = 'node';
@@ -1121,12 +1106,11 @@ function cart_calendar_views_default_views() {
   $handler->display->display_options['fields']['field_cart_date']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['field_cart_date']['hide_alter_empty'] = FALSE;
   $handler->display->display_options['fields']['field_cart_date']['settings'] = array(
-    'format_type' => 'short',
+    'format_type' => 'date_format_cart_date_day',
     'fromto' => 'both',
     'multiple_number' => '',
     'multiple_from' => '',
     'multiple_to' => '',
-    'show_repeat_rule' => '',
   );
   $handler->display->display_options['fields']['field_cart_date']['group_rows'] = FALSE;
   $handler->display->display_options['fields']['field_cart_date']['delta_offset'] = '0';
@@ -1264,12 +1248,6 @@ function cart_calendar_views_default_views() {
     3 => 0,
     4 => 0,
   );
-  $handler->display->display_options['filters']['field_cart_location_value']['expose']['autocomplete_items'] = '10';
-  $handler->display->display_options['filters']['field_cart_location_value']['expose']['autocomplete_min_chars'] = '0';
-  $handler->display->display_options['filters']['field_cart_location_value']['expose']['autocomplete_field'] = 'field_cart_location';
-  $handler->display->display_options['filters']['field_cart_location_value']['expose']['autocomplete_raw_suggestion'] = 1;
-  $handler->display->display_options['filters']['field_cart_location_value']['expose']['autocomplete_raw_dropdown'] = 1;
-  $handler->display->display_options['filters']['field_cart_location_value']['expose']['autocomplete_dependent'] = 0;
   /* Filter criterion: Content: Title */
   $handler->display->display_options['filters']['title']['id'] = 'title';
   $handler->display->display_options['filters']['title']['table'] = 'node';
