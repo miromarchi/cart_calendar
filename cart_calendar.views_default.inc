@@ -1343,6 +1343,55 @@ function cart_calendar_views_default_views() {
   $handler->display->display_options['menu']['name'] = 'main-menu';
   $handler->display->display_options['menu']['context'] = 0;
   $handler->display->display_options['menu']['context_only_inline'] = 0;
+  $translatables['cart_view_calendar2'] = array(
+    t('Master'),
+    t('Cuban Art Calendar'),
+    t('more'),
+    t('Apply'),
+    t('Reset'),
+    t('Sort by'),
+    t('Asc'),
+    t('Desc'),
+    t('no results'),
+    t('<div class="alert alert-info alert-dismissible" role="alert">
+  <button type="button" class="close" data-dismiss="alert"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+  No results were returned by the query. Please <strong>reset the filter</strong> or try again with different filtering options.
+</div>'),
+    t('entity referenced from field_cart_artist'),
+    t('entity referenced from field_cart_curator'),
+    t('entity referenced from field_cart_venue'),
+    t('Exhibit type'),
+    t('Art Media types'),
+    t('Artist/s'),
+    t('Curator/s'),
+    t('Location (address)'),
+    t('Exhibition'),
+    t('Month'),
+    t('All'),
+    t('Week'),
+    t('Day'),
+    t('Year'),
+    t('Block'),
+    t('Mini calendar'),
+    t('Upcoming'),
+    t('Upcoming exhibits'),
+    t('Upcoming events block'),
+    t('Pane: upcomings'),
+    t('Date -  start date (field_cart_date)'),
+    t('View panes'),
+    t('Upcoming tab page'),
+    t('Items per page'),
+    t('- All -'),
+    t('Offset'),
+    t('« first'),
+    t('‹ previous'),
+    t('next ›'),
+    t('last »'),
+    t('Limit to date'),
+    t('Archive tab page'),
+    t('From date'),
+    t('To date'),
+  );
   $export['cart_view_calendar2'] = $view;
 
   return $export;
