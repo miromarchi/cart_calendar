@@ -809,7 +809,7 @@ function cart_calendar_views_default_views() {
   $handler->display->display_options['pager']['options']['quantity'] = '9';
   $handler->display->display_options['defaults']['style_plugin'] = FALSE;
   $handler->display->display_options['style_plugin'] = 'masonry_views';
-  $handler->display->display_options['style_options']['row_class'] = 'col-sm-6 col-md-4';
+  $handler->display->display_options['style_options']['row_class'] = 'col-xs-12 col-sm-6 col-md-4 col-lg-3';
   $handler->display->display_options['style_options']['masonry_resizable'] = TRUE;
   $handler->display->display_options['style_options']['masonry_animated'] = TRUE;
   $handler->display->display_options['style_options']['masonry_fit_width'] = FALSE;
@@ -1059,7 +1059,7 @@ function cart_calendar_views_default_views() {
   $handler->display->display_options['filters']['field_cart_media_types_tid']['vocabulary'] = 'cart_media_types';
   $handler->display->display_options['path'] = 'calendar/upcoming';
   $handler->display->display_options['menu']['type'] = 'tab';
-  $handler->display->display_options['menu']['title'] = 'Upcoming';
+  $handler->display->display_options['menu']['title'] = 'Now/Upcoming';
   $handler->display->display_options['menu']['weight'] = '07';
   $handler->display->display_options['menu']['name'] = 'main-menu';
   $handler->display->display_options['menu']['context'] = 0;
@@ -1067,6 +1067,7 @@ function cart_calendar_views_default_views() {
 
   /* Display: Archive tab page */
   $handler = $view->new_display('page', 'Archive tab page', 'page_5');
+  $handler->display->display_options['enabled'] = FALSE;
   $handler->display->display_options['defaults']['pager'] = FALSE;
   $handler->display->display_options['pager']['type'] = 'full';
   $handler->display->display_options['pager']['options']['items_per_page'] = '20';
